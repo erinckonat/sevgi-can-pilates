@@ -289,9 +289,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
 /* ============================================================
    STÜDYO
    ============================================================ */
-.studio__media{ grid-column: 1 / span 6; position: relative; padding-bottom: var(--s7); }
-.studio__media .arch--main{ width: 78%; }
-.studio__media .arch--side{ position: absolute; right: 0; bottom: 0; width: 42%; aspect-ratio: 3 / 4; border: 6px solid var(--bg); }
+.studio__media{ grid-column: 1 / span 6; position: relative; }
+.studio__media .arch--main{ width: 100%; }
 .studio__copy{ grid-column: 8 / span 5; align-self: center; }
 .studio__copy .lede + .lede{ margin-top: var(--s2); }
 .studio__copy .h2{ margin-bottom: var(--s4); }
@@ -639,16 +638,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
   <section class="section" id="studyo">
     <div class="wrap grid">
       <div class="studio__media reveal">
-        <div class="arch arch--main">
+        <div class="arch arch--main arch--solo">
           <div class="arch__drift">
-            <!-- FOTOĞRAF: stüdyo salonu genel görünüm, dikey 1200x1600 -->
-            <div class="arch__media" aria-hidden="true">Salon fotoğrafı</div>
-          </div>
-        </div>
-        <div class="arch arch--side">
-          <div class="arch__drift">
-            <!-- FOTOĞRAF: ekipman detayı, dikey 900x1200 -->
-            <div class="arch__media" aria-hidden="true">Detay</div>
+            <div class="arch__media"><img src="assets/img/studyo-salon.jpg" width="1200" height="1600" alt="Sevgi Can Pilates Stüdyosu'nun reformer salonu" loading="lazy" decoding="async"></div>
           </div>
         </div>
       </div>
