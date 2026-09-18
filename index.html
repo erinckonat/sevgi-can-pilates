@@ -1,0 +1,1632 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sevgi Can Pilates Stüdyosu — Üsküdar reformer ve mat pilates</title>
+<meta name="description" content="Üsküdar Halk Caddesi’nde reformer ve mat pilates stüdyosu. Grup ve birebir dersler, rezervasyonla. Bilgi ve randevu için WhatsApp’tan yazabilirsiniz.">
+<meta name="theme-color" content="#F6F2EC">
+
+<meta property="og:title" content="Sevgi Can Pilates Stüdyosu — Üsküdar">
+<meta property="og:description" content="Üsküdar Halk Caddesi’nde reformer ve mat pilates stüdyosu. Grup ve birebir dersler, rezervasyonla.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+
+<link rel="preload" href="assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/karla-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+<style>
+@font-face{
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url('assets/fonts/fraunces-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face{
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url('assets/fonts/fraunces-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face{
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url('assets/fonts/karla-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face{
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url('assets/fonts/karla-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ============================================================
+   SEVGİ CAN PİLATES STÜDYOSU — TASARIM SİSTEMİ
+   1 ana renk (ink) + 2 nötr (bone, sand) + 1 vurgu (sage).
+   Gradient yok, saf siyah yok, emoji yok.
+   Boşluklar yalnızca 8px tabanlı ölçekten gelir.
+   ============================================================ */
+
+:root{
+  color-scheme: light;
+
+  /* — Renk — */
+  --ink:      #2B2622;
+  --ink-80:   #4A433C;
+  --ink-60:   #5C554D;
+  --ink-40:   #6A625A;
+  --bone:     #F6F2EC;
+  --sand:     #E7DFD3;
+  --sand-soft:#EFE9DF;
+  --line:     rgba(43, 38, 34, .12);
+  --line-soft:rgba(43, 38, 34, .07);
+  --sage:     #77876B;
+  --sage-d:   #5C6B52;
+  --sage-pale:#E8EDE4;
+
+  /* — Boşluk: 8px ölçeği — */
+  --s1: 8px;
+  --s2: 16px;
+  --s3: 24px;
+  --s4: 32px;
+  --s5: 48px;
+  --s6: 64px;
+  --s7: 96px;
+  --s8: 128px;
+
+  /* — Tipografi — */
+  --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --sans:  'Karla', 'Segoe UI', sans-serif;
+
+  /* — Derinlik: üç düzlem — */
+  --lift-1: 0 1px 2px rgba(43, 38, 34, .04);
+  --lift-2: 0 1px 2px rgba(43, 38, 34, .04), 0 8px 24px rgba(43, 38, 34, .06);
+
+  --ease: cubic-bezier(.16, 1, .3, 1);
+  --radius: 4px;
+}
+
+*, *::before, *::after{ box-sizing: border-box; }
+
+a, button, summary, input, select, textarea, label{
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(92, 107, 82, .12);
+}
+
+html{ -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+body{
+  margin: 0;
+  background: var(--bone);
+  color: var(--ink-80);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.7;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+h1, h2, h3{
+  font-family: var(--serif);
+  color: var(--ink);
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.12;
+  letter-spacing: -.03em;
+  font-variation-settings: 'opsz' 96;
+  text-wrap: balance;
+}
+
+p{ margin: 0; }
+img{ display: block; max-width: 100%; height: auto; }
+
+a{ color: inherit; }
+
+::selection{ background: var(--sage-pale); color: var(--ink); }
+
+/* — Odak halkası: her etkileşimli öğede — */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible{
+  outline: 2px solid var(--sage-d);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.skip{
+  position: absolute;
+  left: var(--s2);
+  top: var(--s2);
+  z-index: 100;
+  transform: translateY(-200%);
+  transition: transform .2s var(--ease);
+}
+.skip:focus{ transform: none; }
+
+/* ============================================================
+   IZGARA & KABUK
+   ============================================================ */
+
+.wrap{
+  width: 100%;
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-inline: var(--s2);
+}
+@media (min-width: 720px){ .wrap{ padding-inline: var(--s5); } }
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--s3);
+}
+@media (max-width: 899px){
+  .grid{ grid-template-columns: 1fr; gap: var(--s4); }
+}
+
+section{ position: relative; }
+[id]{ scroll-margin-top: var(--s7); }
+
+.section-pad{ padding-block: var(--s6); }
+@media (min-width: 900px){ .section-pad{ padding-block: var(--s8); } }
+
+.rule{ height: 1px; background: var(--line-soft); border: 0; margin: 0; }
+
+/* — Bölüm etiketi — */
+.eyebrow{
+  font-size: 12px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink-40);
+  font-weight: 600;
+  margin: 0 0 var(--s3);
+  display: flex;
+  align-items: center;
+  gap: var(--s1);
+}
+.eyebrow::before{
+  content: '';
+  width: 24px;
+  height: 1px;
+  background: var(--sage);
+  flex: none;
+}
+
+.lede{
+  max-width: 62ch;
+  color: var(--ink-60);
+}
+
+/* ============================================================
+   DÜĞMELER
+   ============================================================ */
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s1);
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .01em;
+  padding: var(--s2) var(--s3);
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color .2s var(--ease), color .2s var(--ease), transform .12s var(--ease), border-color .2s var(--ease);
+}
+.btn--solid{ background: var(--ink); color: var(--bone); }
+.btn--solid:hover{ background: var(--sage-d); }
+.btn--solid:active{ transform: scale(.98); }
+
+.btn--sage{ background: var(--sage-d); color: #fff; }
+.btn--sage:hover{ background: var(--ink); }
+.btn--sage:active{ transform: scale(.98); }
+
+.btn--ghost{ background: transparent; color: var(--ink); border-color: var(--line); }
+.btn--ghost:hover{ border-color: var(--ink); }
+.btn--ghost:active{ transform: scale(.98); }
+
+/* — Alt çizgili metin bağlantısı — */
+.link{
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s1);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--line);
+  transition: border-color .2s var(--ease), color .2s var(--ease);
+}
+.link:hover{ border-color: var(--ink); }
+.link .ico{ transition: transform .2s var(--ease); }
+.link:hover .ico{ transform: translateX(3px); }
+
+.ico{ flex: none; display: block; }
+
+/* ============================================================
+   NAV
+   ============================================================ */
+
+.nav{
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 60;
+  background: rgba(246, 242, 236, .86);
+  backdrop-filter: saturate(140%) blur(12px);
+  -webkit-backdrop-filter: saturate(140%) blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: border-color .3s var(--ease), box-shadow .3s var(--ease);
+}
+.nav[data-stuck="true"]{ border-bottom-color: var(--line-soft); box-shadow: var(--lift-1); }
+
+.nav__inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s3);
+  min-height: 72px;
+}
+
+.mark{ text-decoration: none; display: block; line-height: 1.05; }
+.mark__name{
+  font-family: var(--serif);
+  font-size: 19px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--ink);
+  font-variation-settings: 'opsz' 20;
+}
+.mark__sub{
+  display: block;
+  font-size: 10px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--ink-40);
+  margin-top: 3px;
+  font-weight: 500;
+}
+
+.nav__links{
+  display: none;
+  align-items: center;
+  gap: var(--s4);
+}
+.nav__links a{
+  font-size: 15px;
+  text-decoration: none;
+  color: var(--ink-60);
+  transition: color .2s var(--ease);
+}
+.nav__links a:hover{ color: var(--ink); }
+
+.nav__cta{ display: none; }
+
+@media (min-width: 900px){
+  .nav__links{ display: flex; }
+  .nav__cta{ display: inline-flex; }
+  .nav__toggle{ display: none; }
+}
+
+.nav__toggle{
+  appearance: none;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  padding: var(--s2);
+  cursor: pointer;
+  transition: border-color .2s var(--ease), transform .12s var(--ease);
+}
+.nav__toggle:hover{ border-color: var(--ink); }
+.nav__toggle:active{ transform: scale(.98); }
+
+/* — Mobil menü — */
+.menu{
+  position: fixed;
+  inset: 0;
+  overscroll-behavior: contain;
+  z-index: 80;
+  background: var(--bone);
+  display: flex;
+  flex-direction: column;
+  padding: var(--s2) var(--s2) var(--s5);
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+  transition: opacity .25s var(--ease), transform .25s var(--ease);
+}
+.menu[data-open="true"]{ opacity: 1; transform: none; pointer-events: auto; }
+.menu__top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 72px;
+}
+.menu__list{
+  list-style: none;
+  margin: var(--s5) 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.menu__list li{ border-bottom: 1px solid var(--line-soft); }
+.menu__list a{
+  display: block;
+  font-family: var(--serif);
+  font-size: 32px;
+  letter-spacing: -.02em;
+  color: var(--ink);
+  text-decoration: none;
+  padding: var(--s3) 0;
+}
+.menu__foot{ margin-top: auto; padding-top: var(--s5); }
+.menu__foot .btn{ width: 100%; }
+
+/* ============================================================
+   HERO
+   ============================================================ */
+
+.hero{ position: relative; padding-top: var(--s6); padding-bottom: var(--s6); }
+@media (min-width: 900px){
+  .hero{ padding-top: var(--s7); padding-bottom: var(--s8); min-height: 84svh; display: flex; align-items: center; }
+  .hero > .wrap{ width: 100%; }
+}
+
+/* Sıcak, çok düşük yoğunluklu ışık lekesi — sayfayla birlikte kayar */
+.hero::before{
+  content: '';
+  position: absolute;
+  top: -12%;
+  right: -10%;
+  width: min(720px, 90vw);
+  aspect-ratio: 1;
+  background: radial-gradient(circle, rgba(119, 135, 107, .16) 0%, rgba(119, 135, 107, 0) 68%);
+  pointer-events: none;
+  z-index: 0;
+}
+.hero > .wrap{ position: relative; z-index: 1; }
+
+.hero__copy{ grid-column: 1 / span 6; align-self: center; }
+.hero__media{ grid-column: 8 / span 5; }
+@media (max-width: 899px){
+  .hero__copy, .hero__media{ grid-column: auto; }
+}
+
+.hero__title{
+  font-size: clamp(2.6rem, 6.6vw, 4.4rem);
+  font-weight: 300;
+  font-variation-settings: 'opsz' 144;
+  margin-bottom: var(--s3);
+}
+.hero__title .l2{ display: block; }
+@media (min-width: 900px){ .hero__title .l2{ padding-left: .45em; } }
+
+.hero__actions{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s3);
+  margin-top: var(--s5);
+}
+
+.hero__figure{ position: relative; }
+.hero__figure img{
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: var(--radius);
+  filter: saturate(.85);
+}
+@media (min-width: 900px){
+  .hero__figure{ margin-top: var(--s6); }
+  .hero__figure img{ aspect-ratio: 3 / 4.2; }
+}
+.hero__caption{
+  margin-top: var(--s2);
+  font-size: 13px;
+  color: var(--ink-40);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+/* — Hero altı künye şeridi — */
+.strip{
+  border-top: 1px solid var(--line-soft);
+  border-bottom: 1px solid var(--line-soft);
+  background: var(--sand-soft);
+}
+.strip__inner{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--s3);
+  padding-block: var(--s3);
+}
+@media (min-width: 720px){
+  .strip__inner{ grid-template-columns: repeat(3, 1fr); gap: var(--s5); }
+}
+.strip__item{
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s2);
+  font-size: 15px;
+  color: var(--ink-60);
+}
+.strip__item .ico{ color: var(--sage-d); margin-top: 3px; }
+.strip__item b{ color: var(--ink); font-weight: 600; display: block; }
+
+/* ============================================================
+   STÜDYO
+   ============================================================ */
+
+.studio__media{ grid-column: 1 / span 6; }
+@media (min-width: 900px){ .studio__media img{ position: sticky; top: var(--s7); } }
+.studio__copy{ grid-column: 8 / span 5; align-self: center; }
+@media (max-width: 899px){
+  .studio__media, .studio__copy{ grid-column: auto; }
+}
+.studio__media img{
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius);
+  filter: saturate(.85);
+}
+.studio__title{
+  font-size: clamp(2rem, 4.2vw, 3rem);
+  margin-bottom: var(--s3);
+}
+.studio__copy p + p{ margin-top: var(--s2); }
+
+.facts{
+  list-style: none;
+  margin: var(--s5) 0 0;
+  padding: 0;
+}
+.facts li{
+  padding: var(--s3) 0;
+  border-top: 1px solid var(--line-soft);
+}
+.facts li:last-child{ border-bottom: 1px solid var(--line-soft); }
+.facts b{
+  display: block;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+.facts span{ font-size: 15px; color: var(--ink-60); }
+
+/* — Vurgu satırı — */
+.quote{ background: var(--sand); }
+.quote blockquote{
+  grid-column: 2 / span 10;
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.6rem, 3.4vw, 2.5rem);
+  line-height: 1.24;
+  letter-spacing: -.025em;
+  color: var(--ink);
+  font-weight: 300;
+  font-variation-settings: 'opsz' 120;
+  text-wrap: balance;
+}
+@media (max-width: 899px){ .quote blockquote{ grid-column: auto; } }
+
+/* ============================================================
+   DERSLER
+   ============================================================ */
+
+.classes__head{ grid-column: 1 / span 7; margin-bottom: var(--s5); }
+.classes__main{ grid-column: 1 / span 7; }
+.classes__side{ grid-column: 9 / span 4; display: flex; flex-direction: column; gap: var(--s3); }
+@media (max-width: 899px){
+  .classes__head, .classes__main, .classes__side{ grid-column: auto; }
+}
+
+.card{
+  background: #FCFAF6;
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  padding: var(--s4);
+  transition: box-shadow .2s var(--ease), border-color .2s var(--ease);
+}
+@media (min-width: 900px){ .card{ padding: var(--s5); } }
+.card:hover{ box-shadow: var(--lift-2); border-color: var(--line); }
+
+.card--feature{ padding: 0; overflow: hidden; }
+.card--feature img{
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  filter: saturate(.85);
+}
+.card--feature .card__body{ padding: var(--s4); }
+@media (min-width: 900px){ .card--feature .card__body{ padding: var(--s5); } }
+
+.card--small{ flex: 1; display: flex; flex-direction: column; }
+
+.tag{
+  display: inline-block;
+  align-self: flex-start;
+  width: fit-content;
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--sage-d);
+  background: var(--sage-pale);
+  border-radius: 9999px;
+  padding: var(--s1) var(--s2);
+  margin-bottom: var(--s2);
+}
+
+.card h3{
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  margin-bottom: var(--s2);
+  font-variation-settings: 'opsz' 60;
+}
+.card--small h3{ font-size: 1.25rem; }
+.card p{ color: var(--ink-60); font-size: 16px; }
+.card .link{ margin-top: var(--s3); }
+
+/* ============================================================
+   NASIL BAŞLANIR
+   ============================================================ */
+
+.steps{ background: var(--sand-soft); border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); }
+.steps__head{ grid-column: 1 / span 12; margin-bottom: var(--s6); max-width: 46ch; }
+.step{ grid-column: span 4; }
+@media (max-width: 899px){
+  .steps__head, .step{ grid-column: auto; }
+}
+@media (min-width: 900px){
+  .step:nth-child(3){ margin-top: var(--s4); }
+  .step:nth-child(4){ margin-top: var(--s7); }
+}
+.step__num{
+  font-family: var(--serif);
+  font-size: 3.2rem;
+  line-height: 1;
+  color: var(--sand);
+  display: block;
+  margin-bottom: var(--s2);
+  font-weight: 400;
+  font-variation-settings: 'opsz' 96;
+  -webkit-text-stroke: 1px rgba(43, 38, 34, .2);
+}
+.step h3{ font-size: 1.35rem; margin-bottom: var(--s1); }
+.step p{ color: var(--ink-60); font-size: 16px; max-width: 34ch; }
+
+/* ============================================================
+   SAATLER & KONUM
+   ============================================================ */
+
+.info__hours{ grid-column: 1 / span 5; }
+.info__place{ grid-column: 7 / span 6; }
+@media (max-width: 899px){
+  .info__hours, .info__place{ grid-column: auto; }
+}
+
+.hours{ width: 100%; border-collapse: collapse; margin-top: var(--s4); }
+.hours th, .hours td{
+  text-align: left;
+  padding: var(--s2) 0;
+  border-bottom: 1px solid var(--line-soft);
+  font-size: 16px;
+  font-weight: 400;
+}
+.hours th{ color: var(--ink); font-weight: 500; }
+.hours td{ text-align: right; color: var(--ink-60); font-variant-numeric: tabular-nums; }
+.hours tr:first-child th, .hours tr:first-child td{ border-top: 1px solid var(--line-soft); }
+.hours tr[data-closed] th{ color: var(--ink-40); }
+.hours tr[data-closed] td{ color: var(--ink-40); }
+
+.address{
+  font-style: normal;
+  font-size: 18px;
+  color: var(--ink);
+  line-height: 1.6;
+  margin-top: var(--s4);
+  max-width: 34ch;
+}
+.notes{ list-style: none; margin: var(--s5) 0 0; padding: 0; display: grid; gap: var(--s3); }
+.notes li{
+  display: flex;
+  gap: var(--s2);
+  font-size: 15px;
+  color: var(--ink-60);
+  border-left: 2px solid var(--sage);
+  padding-left: var(--s2);
+}
+.notes b{ color: var(--ink); font-weight: 600; }
+
+/* ============================================================
+   SSS
+   ============================================================ */
+
+.faq__head{ grid-column: 1 / span 4; }
+.faq__list{ grid-column: 6 / span 7; }
+@media (max-width: 899px){
+  .faq__head, .faq__list{ grid-column: auto; }
+}
+
+details{ border-bottom: 1px solid var(--line-soft); }
+details:first-of-type{ border-top: 1px solid var(--line-soft); }
+summary{
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--s3);
+  padding: var(--s3) 0;
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  color: var(--ink);
+  letter-spacing: -.015em;
+  font-variation-settings: 'opsz' 40;
+  transition: color .2s var(--ease);
+}
+summary::-webkit-details-marker{ display: none; }
+summary:hover{ color: var(--sage-d); }
+.sign{ flex: none; width: 16px; height: 16px; margin-top: 8px; position: relative; }
+.sign::before, .sign::after{
+  content: '';
+  position: absolute;
+  background: var(--ink-60);
+  inset: 0;
+  margin: auto;
+}
+.sign::before{ width: 16px; height: 1.5px; }
+.sign::after{ width: 1.5px; height: 16px; transition: transform .2s var(--ease); }
+details[open] .sign::after{ transform: scaleY(0); }
+details p{ padding: 0 0 var(--s3); color: var(--ink-60); max-width: 60ch; font-size: 16px; }
+
+/* ============================================================
+   RANDEVU FORMU
+   ============================================================ */
+
+.booking{ background: var(--sand); }
+.booking__copy{ grid-column: 1 / span 4; }
+.booking__form{ grid-column: 6 / span 7; }
+@media (max-width: 899px){
+  .booking__copy, .booking__form{ grid-column: auto; }
+}
+.booking__title{ font-size: clamp(2rem, 4.2vw, 3rem); margin-bottom: var(--s3); }
+.booking__alt{ margin-top: var(--s5); display: grid; gap: var(--s2); }
+.booking__alt a{
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s1);
+  font-size: 15px;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 2px;
+  width: fit-content;
+  transition: border-color .2s var(--ease);
+}
+.booking__alt a:hover{ border-color: var(--ink); }
+.booking__alt .ico{ color: var(--sage-d); }
+
+.form{
+  background: #FCFAF6;
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  padding: var(--s4);
+}
+@media (min-width: 900px){ .form{ padding: var(--s5); } }
+
+.field{ margin-bottom: var(--s3); }
+.field label{
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  margin-bottom: var(--s1);
+}
+.field .opt{ color: var(--ink-40); font-weight: 400; letter-spacing: .04em; text-transform: none; }
+
+.field input,
+.field select,
+.field textarea{
+  width: 100%;
+  font-family: var(--sans);
+  font-size: 16px;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  padding: var(--s1) 0;
+  transition: border-color .2s var(--ease);
+}
+.field textarea{ resize: vertical; min-height: 72px; line-height: 1.6; }
+.field ::placeholder{ color: var(--ink-40); opacity: 1; }
+.field select{
+  appearance: none;
+  background-color: #FCFAF6;
+  color: var(--ink);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none' stroke='%235C554D' stroke-width='1.5'%3E%3Cpath d='M4 6.5L8 10.5L12 6.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 2px center;
+  padding-right: var(--s3);
+  cursor: pointer;
+}
+.field input:hover, .field select:hover, .field textarea:hover{ border-bottom-color: var(--ink-40); }
+.field input:focus, .field select:focus, .field textarea:focus{
+  outline: none;
+  border-bottom-color: var(--sage-d);
+  box-shadow: inset 0 -2px 0 var(--sage-d);
+}
+.field input:focus-visible, .field select:focus-visible, .field textarea:focus-visible{
+  outline: 2px solid var(--sage-d);
+  outline-offset: 4px;
+}
+
+.field [aria-invalid="true"]{
+  border-bottom-color: var(--ink);
+  box-shadow: inset 0 -2px 0 var(--ink);
+}
+.err{
+  display: block;
+  font-size: 13px;
+  color: var(--ink);
+  font-weight: 500;
+  margin-top: var(--s1);
+  min-height: 0;
+}
+.err:empty{ margin-top: 0; }
+
+.form__row{ display: grid; gap: var(--s3); }
+@media (min-width: 640px){ .form__row{ grid-template-columns: 1fr 1fr; } }
+
+.consent{
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s2);
+  margin: var(--s4) 0 var(--s3);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink-60);
+  cursor: pointer;
+}
+.consent input{
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin: 2px 0 0;
+  accent-color: var(--sage-d);
+  cursor: pointer;
+}
+.consent a{ color: var(--ink); border-bottom: 1px solid var(--line); text-decoration: none; }
+.consent a:hover{ border-color: var(--ink); }
+.consent[data-invalid="true"]{ color: var(--ink); }
+
+.form__submit{ width: 100%; margin-top: var(--s2); }
+.form__note{ font-size: 13px; color: var(--ink-40); margin-top: var(--s2); text-align: center; }
+
+.form__done{
+  display: none;
+  margin-top: var(--s3);
+  padding: var(--s3);
+  background: var(--sage-pale);
+  border-radius: var(--radius);
+  font-size: 15px;
+  color: var(--ink-80);
+}
+.form__done[data-shown="true"]{ display: block; }
+.form__done a{ color: var(--ink); font-weight: 600; }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.foot{ background: var(--bone); border-top: 1px solid var(--line-soft); padding-block: var(--s6) var(--s5); }
+.foot__brand{ grid-column: 1 / span 3; }
+.foot__col{ grid-column: span 3; }
+@media (max-width: 899px){
+  .foot__brand, .foot__col{ grid-column: auto; }
+}
+.foot h3{
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink-40);
+  font-weight: 600;
+  margin-bottom: var(--s2);
+}
+.foot p, .foot address{ font-size: 15px; color: var(--ink-60); font-style: normal; line-height: 1.7; }
+.foot a{ color: var(--ink-60); text-decoration: none; transition: color .2s var(--ease); }
+.foot a:hover{ color: var(--ink); }
+.foot__social{ display: inline-flex; align-items: center; gap: var(--s1); }
+.foot__legal{ display: flex; flex-wrap: wrap; gap: var(--s3); }
+.foot__legal a{ border-bottom: 1px solid transparent; transition: border-color .2s var(--ease), color .2s var(--ease); }
+.foot__legal a:hover{ border-bottom-color: var(--ink); }
+
+.foot__bottom{
+  margin-top: var(--s6);
+  padding-top: var(--s3);
+  border-top: 1px solid var(--line-soft);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--ink-40);
+}
+
+/* ============================================================
+   MOBİL RANDEVU ÇUBUĞU
+   ============================================================ */
+
+.dock{
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 70;
+  padding: var(--s2);
+  padding-bottom: calc(var(--s2) + env(safe-area-inset-bottom, 0px));
+  background: rgba(246, 242, 236, .92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid var(--line-soft);
+  box-shadow: var(--lift-2);
+  transform: translateY(110%);
+  transition: transform .3s var(--ease);
+}
+.dock[data-shown="true"]{ transform: none; }
+.dock .btn{ width: 100%; }
+@media (min-width: 900px){ .dock{ display: none; } }
+
+/* ============================================================
+   GİRİŞ HAREKETİ
+   ============================================================ */
+
+.js .reveal{ opacity: 0; transform: translateY(12px); }
+.reveal[data-in="true"]{
+  opacity: 1;
+  transform: none;
+  transition: opacity .6s var(--ease), transform .6s var(--ease);
+  transition-delay: calc(var(--index, 0) * 80ms);
+}
+
+.hero__line{ display: block; }
+.js .hero__line{ opacity: 0; transform: translateY(14px); }
+.is-ready .hero__line{
+  animation: rise .7s var(--ease) forwards;
+}
+.is-ready .hero__line:nth-child(2){ animation-delay: .1s; }
+@keyframes rise{ to{ opacity: 1; transform: none; } }
+
+.js .hero__fade{ opacity: 0; }
+.is-ready .hero__fade{ animation: fade .7s var(--ease) .28s forwards; }
+.is-ready .hero__fade--late{ animation-delay: .4s; }
+@keyframes fade{ to{ opacity: 1; } }
+
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior: auto; }
+  *, *::before, *::after{
+    animation-duration: .001ms !important;
+    animation-delay: 0ms !important;
+    transition-duration: .001ms !important;
+    transition-delay: 0ms !important;
+  }
+  .js .reveal{ opacity: 1; transform: none; }
+  .js .hero__line{ opacity: 1; transform: none; animation: none; }
+  .js .hero__fade{ opacity: 1; animation: none; }
+}
+</style>
+<script>document.documentElement.className += ' js';</script>
+</head>
+
+<body>
+
+<a class="btn btn--solid skip" href="#icerik">İçeriğe geç</a>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a class="mark" href="#top" aria-label="Sevgi Can Pilates Stüdyosu — sayfa başı">
+      <span class="mark__name" translate="no">Sevgi Can</span>
+      <span class="mark__sub">Pilates Stüdyosu</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Ana menü">
+      <a href="#studyo">Stüdyo</a>
+      <a href="#dersler">Dersler</a>
+      <a href="#saatler">Saatler &amp; Konum</a>
+      <a href="#sss">SSS</a>
+    </nav>
+
+    <a class="btn btn--solid nav__cta" href="#randevu">Randevu al</a>
+
+    <button class="nav__toggle" id="menuOpen" type="button" aria-expanded="false" aria-controls="menu">Menü</button>
+  </div>
+</header>
+
+<!-- ================= MOBİL MENÜ ================= -->
+<div class="menu" id="menu" data-open="false" role="dialog" aria-modal="true" aria-label="Menü">
+  <div class="wrap menu__top">
+    <span class="mark">
+      <span class="mark__name" translate="no">Sevgi Can</span>
+      <span class="mark__sub">Pilates Stüdyosu</span>
+    </span>
+    <button class="nav__toggle" id="menuClose" type="button">Kapat</button>
+  </div>
+  <div class="wrap" style="display:flex;flex-direction:column;flex:1">
+    <ul class="menu__list">
+      <li><a href="#studyo" data-menu-link>Stüdyo</a></li>
+      <li><a href="#dersler" data-menu-link>Dersler</a></li>
+      <li><a href="#nasil" data-menu-link>Nasıl başlanır</a></li>
+      <li><a href="#saatler" data-menu-link>Saatler &amp; Konum</a></li>
+      <li><a href="#sss" data-menu-link>SSS</a></li>
+    </ul>
+    <div class="menu__foot">
+      <a class="btn btn--solid" href="#randevu" data-menu-link>Randevu al</a>
+    </div>
+  </div>
+</div>
+
+<main id="icerik">
+  <span id="top"></span>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="wrap grid">
+      <div class="hero__copy">
+        <p class="eyebrow hero__fade">Üsküdar · Halk Caddesi</p>
+        <h1 class="hero__title">
+          <span class="hero__line">Üsküdar’da reformer</span>
+          <span class="hero__line l2">ve mat pilates.</span>
+        </h1>
+        <p class="lede hero__fade">
+          Halk Caddesi’ndeki stüdyomuzda grup ve birebir dersler veriyoruz.
+          Dersler rezervasyonla yapılır.
+        </p>
+        <div class="hero__actions hero__fade hero__fade--late">
+          <a class="btn btn--sage" href="#randevu">
+            Randevu al
+            <svg class="ico" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+          <a class="link" href="#dersler">
+            Dersler
+            <svg class="ico" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__media hero__fade">
+        <figure class="hero__figure" style="margin:0">
+          <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20900%201260%27%3E%3Crect%20width%3D%27900%27%20height%3D%271260%27%20fill%3D%27%23E7DFD3%27%2F%3E%3Ctext%20x%3D%27450%27%20y%3D%27630%27%20font-family%3D%27Georgia%2Cserif%27%20font-size%3D%2758%27%20fill%3D%27%238A8177%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27central%27%3ESt%C3%BCdyo%20foto%C4%9Fraf%C4%B1%3C%2Ftext%3E%3C%2Fsvg%3E" width="900" height="1260"
+               alt="Sevgi Can Pilates Stüdyosu’nun reformer salonu" fetchpriority="high">
+          <figcaption class="hero__caption">Erzi İş Hanı, Halk Caddesi</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= KÜNYE ŞERİDİ ================= -->
+  <div class="strip">
+    <div class="wrap strip__inner">
+      <p class="strip__item reveal" style="--index:0">
+        <svg class="ico" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="7.25"/><path d="M10 5.75V10l2.75 1.75"/></svg>
+        <span><b>Salı – Cumartesi 09:00 – 22:00</b>Pazar 09:00 – 14:00, pazartesi kapalı</span>
+      </p>
+      <p class="strip__item reveal" style="--index:1">
+        <svg class="ico" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M16 8.5c0 4.25-6 9-6 9s-6-4.75-6-9a6 6 0 0 1 12 0Z"/><circle cx="10" cy="8.4" r="2.1"/></svg>
+        <span><b>Üsküdar, Halk Caddesi</b>Erzi İş Hanı No:20 D:2</span>
+      </p>
+      <p class="strip__item reveal" style="--index:2">
+        <svg class="ico" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4.5 4.5h3l1.25 3-1.6 1.2a9 9 0 0 0 4.15 4.15l1.2-1.6 3 1.25v3a1 1 0 0 1-1.1 1A12.5 12.5 0 0 1 3.5 5.6a1 1 0 0 1 1-1.1Z"/></svg>
+        <span><b>Rezervasyonla çalışır</b>Ders öncesi yer ayırtmanız gerekir</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- ================= STÜDYO ================= -->
+  <section class="section-pad" id="studyo">
+    <div class="wrap grid">
+      <div class="studio__media reveal">
+        <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%201200%20900%27%3E%3Crect%20width%3D%271200%27%20height%3D%27900%27%20fill%3D%27%23E7DFD3%27%2F%3E%3Ctext%20x%3D%27600%27%20y%3D%27450%27%20font-family%3D%27Georgia%2Cserif%27%20font-size%3D%2764%27%20fill%3D%27%238A8177%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27central%27%3ESalon%20foto%C4%9Fraf%C4%B1%3C%2Ftext%3E%3C%2Fsvg%3E" width="1200" height="900"
+             alt="Stüdyonun reformer yataklarının dizildiği ana salonu" loading="lazy">
+      </div>
+
+      <div class="studio__copy reveal" style="--index:1">
+        <p class="eyebrow">Stüdyo</p>
+        <h2 class="studio__title">Halk Caddesi’ndeki stüdyomuz.</h2>
+        <p class="lede">
+          Sevgi Can Pilates Stüdyosu, Üsküdar Halk Caddesi’ndeki Erzi İş Hanı’nda
+          hizmet veriyor. Reformer ve mat pilates dersleri grup ve birebir olarak yapılıyor.
+        </p>
+        <p class="lede">
+          Dersler rezervasyonla düzenlenir. Program katılımcının seviyesine göre
+          belirlenir; grup dersleri eğitmenin herkesle ilgilenebileceği sayıda tutulur.
+        </p>
+
+        <ul class="facts">
+          <li>
+            <b>Rezervasyon</b>
+            <span>Derse katılmak için önceden yer ayırtmanız gerekir.</span>
+          </li>
+          <li>
+            <b>Grup dersleri</b>
+            <span>Grup dersleri kontenjanlıdır; güncel kontenjan için bize yazabilirsiniz.</span>
+          </li>
+          <li>
+            <b>Üyelik kartları</b>
+            <span>MultiSport ve Benefit Systems kartları geçerlidir.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VURGU ================= -->
+  <section class="quote section-pad">
+    <div class="wrap grid">
+      <blockquote class="reveal">
+        Reformer pilates, duruş ve genel kondisyon üzerine çalışan bir yöntemdir.
+        Hangi dersin size uygun olduğunu ilk görüşmede birlikte belirliyoruz.
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ================= DERSLER ================= -->
+  <section class="section-pad" id="dersler">
+    <div class="wrap grid">
+      <div class="classes__head reveal">
+        <p class="eyebrow">Dersler</p>
+        <h2 class="studio__title">Verdiğimiz dersler.</h2>
+        <p class="lede">
+          Reformer ve mat pilates dersleri, grup ve birebir olarak yapılıyor.
+        </p>
+      </div>
+
+      <article class="card card--feature classes__main reveal">
+        <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%201280%20800%27%3E%3Crect%20width%3D%271280%27%20height%3D%27800%27%20fill%3D%27%23E7DFD3%27%2F%3E%3Ctext%20x%3D%27640%27%20y%3D%27400%27%20font-family%3D%27Georgia%2Cserif%27%20font-size%3D%2764%27%20fill%3D%27%238A8177%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27central%27%3EReformer%20foto%C4%9Fraf%C4%B1%3C%2Ftext%3E%3C%2Fsvg%3E" width="1280" height="800"
+             alt="Reformer üzerinde yapılan bir çalışma" loading="lazy">
+        <div class="card__body">
+          <span class="tag">Grup veya birebir</span>
+          <h3>Reformer Pilates</h3>
+          <p>
+            Reformer adı verilen yaylı ekipman üzerinde yapılır. Direnç kişiye göre
+            ayarlanabilir. Duruş, omurga hareketliliği ve karın–sırt kaslarının
+            çalıştırılması üzerine kuruludur. Grup ya da birebir olarak alınabilir.
+          </p>
+          <a class="link" href="#randevu">
+            Randevu al
+            <svg class="ico" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <div class="classes__side">
+        <article class="card card--small reveal" style="--index:1">
+          <span class="tag">Tek kişi</span>
+          <h3>Birebir Özel Ders</h3>
+          <p>
+            Eğitmenle tek kişi çalışılır. Ağrı, sakatlık sonrası dönüş ya da yeni
+            başlangıç için tercih edilir. Program tamamen kişiye göre düzenlenir.
+          </p>
+        </article>
+
+        <article class="card card--small reveal" style="--index:2">
+          <span class="tag">Ekipmansız</span>
+          <h3>Mat Pilates</h3>
+          <p>
+            Ekipman kullanılmadan, mat üzerinde vücut ağırlığıyla yapılır. Nefes ve
+            kontrol çalışmalarını içerir; reformer derslerini tamamlar.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NASIL BAŞLANIR ================= -->
+  <section class="steps section-pad" id="nasil">
+    <div class="wrap grid">
+      <div class="steps__head reveal">
+        <p class="eyebrow">Nasıl başlanır</p>
+        <h2 class="studio__title">Nasıl başlanır?</h2>
+      </div>
+
+      <div class="step reveal">
+        <span class="step__num" aria-hidden="true">01</span>
+        <h3>Mesaj gönderin</h3>
+        <p>
+          Aşağıdaki formu doldurun ya da WhatsApp’tan yazın. Düşündüğünüz dersi ve
+          uygun olduğunuz günleri belirtmeniz yeterli.
+        </p>
+      </div>
+
+      <div class="step reveal" style="--index:1">
+        <span class="step__num" aria-hidden="true">02</span>
+        <h3>Görüşelim</h3>
+        <p>
+          Size dönüp deneyiminizi ve varsa sağlık durumunuzu soruyoruz. Uygun saat
+          ve güncel fiyat bilgisini paylaşıyoruz.
+        </p>
+      </div>
+
+      <div class="step reveal" style="--index:2">
+        <span class="step__num" aria-hidden="true">03</span>
+        <h3>İlk ders</h3>
+        <p>
+          Rahat kıyafet ve kaymaz çorapla gelmeniz yeterli. İlk derste tanışma ve
+          seviye tespiti yapılır.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SAATLER & KONUM ================= -->
+  <section class="section-pad" id="saatler">
+    <div class="wrap grid">
+      <div class="info__hours reveal">
+        <p class="eyebrow">Çalışma saatleri</p>
+        <h2 class="studio__title">Haftanın altı günü.</h2>
+        <table class="hours">
+          <caption class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">Haftalık çalışma saatleri</caption>
+          <tbody>
+            <tr data-closed><th scope="row">Pazartesi</th><td>Kapalı</td></tr>
+            <tr><th scope="row">Salı</th><td>09:00 – 22:00</td></tr>
+            <tr><th scope="row">Çarşamba</th><td>09:00 – 22:00</td></tr>
+            <tr><th scope="row">Perşembe</th><td>09:00 – 22:00</td></tr>
+            <tr><th scope="row">Cuma</th><td>09:00 – 22:00</td></tr>
+            <tr><th scope="row">Cumartesi</th><td>09:00 – 22:00</td></tr>
+            <tr><th scope="row">Pazar</th><td>09:00 – 14:00</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="info__place reveal" style="--index:1">
+        <p class="eyebrow">Konum</p>
+        <h2 class="studio__title">Halk Caddesi, Erzi İş Hanı.</h2>
+        <address class="address">
+          Aziz Mahmut Hüdayi Mah.<br>
+          Halk Cd. No:20 D:2, Erzi İş Hanı<br>
+          34674 Üsküdar / İstanbul
+        </address>
+        <p style="margin-top:var(--s3)">
+          <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Sevgi%20Can%20Pilates%20Studyo%20Halk%20Caddesi%20%C3%9Csk%C3%BCdar" target="_blank" rel="noopener">
+            Yol tarifi al
+            <svg class="ico" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12"/></svg>
+          </a>
+        </p>
+
+        <ul class="notes">
+          <li><span><b>İptal.</b> Gelemeyeceğiniz dersi en az 24&nbsp;saat önce haber vermeniz gerekir.</span></li>
+          <li><span><b>Üyelik kartı.</b> MultiSport ve Benefit Systems kartları geçerlidir.</span></li>
+          <li><span><b>Yer ayırtma.</b> Derse katılım rezervasyonla yapılır; boş saatler için mesaj gönderebilirsiniz.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SSS ================= -->
+  <section class="section-pad" id="sss" style="border-top:1px solid var(--line-soft)">
+    <div class="wrap grid">
+      <div class="faq__head reveal">
+        <p class="eyebrow">Sık sorulanlar</p>
+        <h2 class="studio__title">Merak edilenler.</h2>
+        <p class="lede" style="margin-top:var(--s3)">
+          Listede olmayan bir sorunuz varsa yazabilirsiniz.
+        </p>
+      </div>
+
+      <div class="faq__list reveal" style="--index:1">
+        <details>
+          <summary>Hiç pilates yapmadım, başlayabilir miyim?<span class="sign" aria-hidden="true"></span></summary>
+          <p>
+            Evet. İlk ders tanışma ve seviye tespitiyle geçer, hareketler seviyenize
+            göre ayarlanır. Daha önce pilates yapmamış olmanız sorun değildir.
+          </p>
+        </details>
+
+        <details>
+          <summary>Derse nasıl kayıt oluyorum?<span class="sign" aria-hidden="true"></span></summary>
+          <p>
+            Sayfanın altındaki formu doldurabilir ya da WhatsApp’tan yazabilirsiniz.
+            Size dönüp uygun saati belirliyoruz. Katılım rezervasyonla olduğu için
+            gelmeden önce bilgi vermeniz gerekir.
+          </p>
+        </details>
+
+        <details>
+          <summary>Ne giymeliyim, yanımda ne getirmeliyim?<span class="sign" aria-hidden="true"></span></summary>
+          <p>
+            Hareketi kısıtlamayan rahat bir kıyafet ve kaymaz çorap yeterli. Reformer
+            ve matlar stüdyoda mevcuttur.
+          </p>
+        </details>
+
+        <details>
+          <summary>Dersi iptal edersem ne oluyor?<span class="sign" aria-hidden="true"></span></summary>
+          <p>
+            Gelemeyeceğiniz dersi en az 24&nbsp;saat önce bildirmeniz gerekir. Daha geç
+            bildirilen dersler için aynı esneklik sağlanamıyor.
+          </p>
+        </details>
+
+        <details>
+          <summary>Belimde ya da boynumda ağrı var, gelebilir miyim?<span class="sign" aria-hidden="true"></span></summary>
+          <p>
+            Programa başlamadan önce ağrının yerini ve doktorunuzun bir kısıtlaması olup
+            olmadığını soruyoruz. Gerektiğinde grup yerine birebir dersle başlanması
+            önerilir.
+          </p>
+        </details>
+
+        <details>
+          <summary>MultiSport kartım geçerli mi?<span class="sign" aria-hidden="true"></span></summary>
+          <p>
+            Evet, MultiSport ve Benefit Systems kartları geçerlidir. Kartla gelseniz de
+            önceden yer ayırtmanız gerekir.
+          </p>
+        </details>
+
+        <details>
+          <summary>Ders ücretleri ne kadar?<span class="sign" aria-hidden="true"></span></summary>
+          <p>
+            Ücret, ders türüne ve paket sayısına göre değişir. Güncel fiyat listesini
+            formu doldurduğunuzda ya da WhatsApp’tan yazdığınızda iletiyoruz.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RANDEVU ================= -->
+  <section class="booking section-pad" id="randevu">
+    <div class="wrap grid">
+      <div class="booking__copy reveal">
+        <p class="eyebrow">Randevu</p>
+        <h2 class="booking__title">Randevu ve bilgi.</h2>
+        <p class="lede">
+          Formu doldurduğunuzda mesajınız WhatsApp’ta hazır olarak açılır, göndermeniz
+          yeterli. Uygun saatler ve güncel fiyat bilgisi tarafımızdan iletilir.
+        </p>
+
+        <div class="booking__alt">
+          <a href="https://wa.me/905327877156" target="_blank" rel="noopener">
+            <svg class="ico" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3.5 16.5 4.6 13a6.8 6.8 0 1 1 2.6 2.5l-3.7 1Z"/></svg>
+            Doğrudan WhatsApp’tan yazın
+          </a>
+          <a href="tel:+905327877156">
+            <svg class="ico" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4.5 4.5h3l1.25 3-1.6 1.2a9 9 0 0 0 4.15 4.15l1.2-1.6 3 1.25v3a1 1 0 0 1-1.1 1A12.5 12.5 0 0 1 3.5 5.6a1 1 0 0 1 1-1.1Z"/></svg>
+            0532 787 71 56
+          </a>
+          <a href="https://www.instagram.com/sevgicanpilatesstudio/" target="_blank" rel="noopener">
+            <svg class="ico" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3.5" y="3.5" width="13" height="13" rx="4"/><circle cx="10" cy="10" r="3.1"/><circle cx="13.9" cy="6.1" r=".9" fill="currentColor" stroke="none"/></svg>
+            @sevgicanpilatesstudio
+          </a>
+        </div>
+      </div>
+
+      <div class="booking__form reveal" style="--index:1">
+        <form class="form" id="bookingForm" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="ad">Ad Soyad</label>
+              <input type="text" id="ad" name="ad" autocomplete="name" aria-describedby="err-ad">
+              <span class="err" id="err-ad" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="tel">Telefon</label>
+              <input type="tel" id="tel" name="tel" inputmode="tel" autocomplete="tel" placeholder="Örn. 0532 000 00 00…" aria-describedby="err-tel">
+              <span class="err" id="err-tel" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="ders">Hangi ders?</label>
+            <select id="ders" name="ders" autocomplete="off" aria-describedby="err-ders">
+              <option value="">Seçin</option>
+              <option>Reformer pilates — grup</option>
+              <option>Reformer pilates — birebir</option>
+              <option>Mat pilates</option>
+              <option>Henüz emin değilim</option>
+            </select>
+            <span class="err" id="err-ders" aria-live="polite"></span>
+          </div>
+
+          <div class="field">
+            <label for="tercih">Hangi gün ve saatler size uygun?</label>
+            <input type="text" id="tercih" name="tercih" autocomplete="off" placeholder="Örn. hafta içi akşam 19:00 sonrası…" aria-describedby="err-tercih">
+            <span class="err" id="err-tercih" aria-live="polite"></span>
+          </div>
+
+          <div class="field">
+            <label for="not">Eklemek istediğiniz bir not <span class="opt">(isteğe bağlı)</span></label>
+            <textarea id="not" name="not" rows="3" autocomplete="off" placeholder="Örn. daha önce pilates deneyiminiz, sormak istedikleriniz…"></textarea>
+          </div>
+
+          <label class="consent" for="onay" id="consentRow">
+            <input type="checkbox" id="onay" name="onay" autocomplete="off" aria-describedby="err-onay">
+            <span><a href="gizlilik.html" target="_blank" rel="noopener">Gizlilik ve KVKK aydınlatma metnini</a>
+            okudum; iletişim bilgilerimin randevu talebim için kullanılmasını kabul ediyorum.</span>
+          </label>
+          <span class="err" id="err-onay" aria-live="polite" style="margin-top:0"></span>
+
+          <button class="btn btn--sage form__submit" type="submit">
+            <svg class="ico" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3.5 16.5 4.6 13a6.8 6.8 0 1 1 2.6 2.5l-3.7 1Z"/></svg>
+            WhatsApp’tan gönder
+          </button>
+          <p class="form__note">Bilgileriniz kaydedilmez; yalnızca mesaj metnine dönüştürülür.</p>
+
+          <div class="form__done" id="formDone" data-shown="false" role="status">
+            WhatsApp yeni sekmede açıldı. Açılmadıysa
+            <a href="https://wa.me/905327877156" target="_blank" rel="noopener">wa.me/905327877156</a>
+            adresinden ya da <a href="tel:+905327877156">0532&nbsp;787&nbsp;71&nbsp;56</a> numarasından bize
+            doğrudan ulaşabilirsiniz.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="foot" id="foot">
+  <div class="wrap grid">
+    <div class="foot__brand">
+      <span class="mark">
+        <span class="mark__name" translate="no">Sevgi Can</span>
+        <span class="mark__sub">Pilates Stüdyosu</span>
+      </span>
+      <p style="margin-top:var(--s3);max-width:32ch">
+        Üsküdar Halk Caddesi’nde reformer ve mat pilates. Grup ve birebir dersler.
+      </p>
+    </div>
+
+    <div class="foot__col">
+      <h3>Adres</h3>
+      <address>
+        Aziz Mahmut Hüdayi Mah.<br>
+        Halk Cd. No:20 D:2<br>
+        Erzi İş Hanı<br>
+        34674 Üsküdar / İstanbul
+      </address>
+    </div>
+
+    <div class="foot__col">
+      <h3>İletişim</h3>
+      <p>
+        <a href="tel:+905327877156">0532&nbsp;787&nbsp;71&nbsp;56</a><br>
+        <a href="https://wa.me/905327877156" target="_blank" rel="noopener">WhatsApp</a><br>
+        <a class="foot__social" href="https://www.instagram.com/sevgicanpilatesstudio/" target="_blank" rel="noopener">
+          <svg class="ico" width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3.5" y="3.5" width="13" height="13" rx="4"/><circle cx="10" cy="10" r="3.1"/><circle cx="13.9" cy="6.1" r=".9" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+      </p>
+    </div>
+
+    <div class="foot__col">
+      <h3>Saatler</h3>
+      <p>
+        Pazartesi — Kapalı<br>
+        Salı – Cumartesi — 09:00 – 22:00<br>
+        Pazar — 09:00 – 14:00
+      </p>
+    </div>
+  </div>
+
+  <div class="wrap foot__bottom">
+    <span>© <span id="yil">2026</span> Sevgi Can Pilates Stüdyosu</span>
+    <span class="foot__legal">
+      <a href="gizlilik.html">Gizlilik ve KVKK</a>
+      <a href="cerez-politikasi.html">Çerez politikası</a>
+      <a href="kullanim-kosullari.html">Kullanım koşulları</a>
+    </span>
+  </div>
+</footer>
+
+<!-- ================= MOBİL RANDEVU ÇUBUĞU ================= -->
+<div class="dock" id="dock" data-shown="false">
+  <a class="btn btn--sage" href="#randevu">Randevu al</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "Sevgi Can Pilates Stüdyosu",
+  "description": "Üsküdar Halk Caddesi'nde reformer ve mat pilates stüdyosu. Küçük gruplar ve birebir dersler, rezervasyonla.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Aziz Mahmut Hüdayi Mah. Halk Cd. No:20 D:2, Erzi İş Hanı",
+    "addressLocality": "Üsküdar",
+    "addressRegion": "İstanbul",
+    "postalCode": "34674",
+    "addressCountry": "TR"
+  },
+  "telephone": "+905327877156",
+  "sameAs": ["https://www.instagram.com/sevgicanpilatesstudio/"],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "22:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:00", "closes": "14:00" }
+  ]
+}
+</script>
+
+<script>
+(function () {
+  'use strict';
+
+  var WA = '905327877156';
+
+  /* — Hero giriş hareketi — */
+  requestAnimationFrame(function () { document.body.classList.add('is-ready'); });
+
+  /* — Yıl — */
+  document.getElementById('yil').textContent = new Date().getFullYear();
+
+  /* — Nav gölgesi — */
+  var nav = document.getElementById('nav');
+  var sentinel = document.getElementById('top');
+  if ('IntersectionObserver' in window && sentinel) {
+    new IntersectionObserver(function (entries) {
+      nav.setAttribute('data-stuck', String(!entries[0].isIntersecting));
+    }, { rootMargin: '-72px 0px 0px 0px' }).observe(sentinel);
+  }
+
+  /* — Bölüm girişleri — */
+  var revealables = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.setAttribute('data-in', 'true');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    revealables.forEach(function (el) { io.observe(el); });
+    // Gözlemci herhangi bir nedenle tetiklenmezse içerik gizli kalmasın
+    setTimeout(function () {
+      revealables.forEach(function (el) { el.setAttribute('data-in', 'true'); });
+    }, 2500);
+  } else {
+    revealables.forEach(function (el) { el.setAttribute('data-in', 'true'); });
+  }
+
+  /* — Mobil menü — */
+  var menu = document.getElementById('menu');
+  var openBtn = document.getElementById('menuOpen');
+  var closeBtn = document.getElementById('menuClose');
+
+  var behind = [document.getElementById('nav'), document.getElementById('icerik'),
+                document.getElementById('foot'), document.getElementById('dock')];
+
+  function setMenu(open) {
+    menu.setAttribute('data-open', String(open));
+    openBtn.setAttribute('aria-expanded', String(open));
+    document.documentElement.style.overflow = open ? 'hidden' : '';
+    // Menü açıkken klavye odağı arka plana kaçmasın
+    behind.forEach(function (el) {
+      if (!el) { return; }
+      if (open) { el.setAttribute('inert', ''); } else { el.removeAttribute('inert'); }
+    });
+    if (open) { closeBtn.focus(); } else { openBtn.focus(); }
+  }
+  openBtn.addEventListener('click', function () { setMenu(true); });
+  closeBtn.addEventListener('click', function () { setMenu(false); });
+  document.querySelectorAll('[data-menu-link]').forEach(function (a) {
+    a.addEventListener('click', function () { setMenu(false); });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && menu.getAttribute('data-open') === 'true') { setMenu(false); }
+  });
+
+  /* — Mobil randevu çubuğu: hero'dan sonra görünür, randevu/footer'da gizlenir — */
+  var dock = document.getElementById('dock');
+  var booking = document.getElementById('randevu');
+  var pastHero = false;
+  var atBooking = false;
+
+  function syncDock() {
+    dock.setAttribute('data-shown', String(pastHero && !atBooking));
+  }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (entries) {
+      pastHero = !entries[0].isIntersecting;
+      syncDock();
+    }, { threshold: 0 }).observe(document.querySelector('.hero'));
+
+    new IntersectionObserver(function (entries) {
+      atBooking = entries[0].isIntersecting;
+      syncDock();
+    }, { threshold: 0.05 }).observe(booking);
+  }
+
+  /* — Randevu formu → WhatsApp — */
+  var form = document.getElementById('bookingForm');
+  var done = document.getElementById('formDone');
+
+  var rules = [
+    { id: 'ad',      msg: 'Lütfen adınızı yazın.',                     test: function (v) { return v.length >= 2; } },
+    { id: 'tel',     msg: 'Size ulaşabilmemiz için telefon gerekli.',  test: function (v) { return v.replace(/\D/g, '').length >= 10; } },
+    { id: 'ders',    msg: 'Bir ders türü seçin.',                      test: function (v) { return v !== ''; } },
+    { id: 'tercih',  msg: 'Uygun olduğunuz gün ya da saatleri yazın.', test: function (v) { return v.length >= 3; } },
+    { id: 'onay',    msg: 'Devam etmek için onay kutusunu işaretleyin.',
+      test: function (v, el) { return el.checked; } }
+  ];
+
+  function clearError(el) {
+    el.removeAttribute('aria-invalid');
+    document.getElementById('err-' + el.id).textContent = '';
+    if (el.id === 'onay') { document.getElementById('consentRow').removeAttribute('data-invalid'); }
+  }
+
+  rules.forEach(function (rule) {
+    var el = document.getElementById(rule.id);
+    el.addEventListener('input', function () { clearError(el); });
+    el.addEventListener('change', function () { clearError(el); });
+  });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    var firstBad = null;
+    rules.forEach(function (rule) {
+      var el = document.getElementById(rule.id);
+      var errEl = document.getElementById('err-' + rule.id);
+      if (rule.test(el.value.trim(), el)) {
+        clearError(el);
+      } else {
+        el.setAttribute('aria-invalid', 'true');
+        errEl.textContent = rule.msg;
+        if (el.id === 'onay') { document.getElementById('consentRow').setAttribute('data-invalid', 'true'); }
+        if (!firstBad) { firstBad = el; }
+      }
+    });
+
+    if (firstBad) { firstBad.focus(); return; }
+
+    var ad = document.getElementById('ad').value.trim();
+    var tel = document.getElementById('tel').value.trim();
+    var ders = document.getElementById('ders').value.trim();
+    var tercih = document.getElementById('tercih').value.trim();
+    var not = document.getElementById('not').value.trim();
+
+    var msg =
+      'Merhaba, Sevgi Can Pilates Stüdyosu\'ndan bilgi almak istiyorum.\n\n' +
+      'Ad Soyad: ' + ad + '\n' +
+      'Telefon: ' + tel + '\n' +
+      'Ders: ' + ders + '\n' +
+      'Uygun zaman: ' + tercih +
+      (not ? '\nNot: ' + not : '');
+
+    window.open('https://wa.me/' + WA + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+    done.setAttribute('data-shown', 'true');
+  });
+})();
+</script>
+
+</body>
+</html>

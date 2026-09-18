@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://erinckonat.github.io/sevgi-can-pilates/sitemap.xml
