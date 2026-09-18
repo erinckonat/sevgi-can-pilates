@@ -217,9 +217,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
 .nav__inner{ display: flex; align-items: center; justify-content: space-between; gap: var(--s3); min-height: 72px; }
 
 .brand{ text-decoration: none; display: inline-flex; flex-direction: column; line-height: 1; }
-.brand__name{ font-family: var(--display); font-size: 26px; font-weight: 600; text-transform: uppercase; letter-spacing: .01em; color: var(--ink); }
-.brand__name em{ font-style: normal; color: var(--brand); }
-.brand__sub{ font-size: 11px; font-weight: 600; letter-spacing: .32em; text-transform: uppercase; color: var(--ink-3); margin-top: 4px; }
+.brand__name{ font-family: var(--display); font-size: 24px; font-weight: 600; letter-spacing: .01em; color: var(--ink); text-transform: none; }
 
 .nav__links{ display: none; gap: var(--s4); }
 .nav__links a{ font-size: 15px; font-weight: 500; color: var(--ink-2); text-decoration: none; padding-block: var(--s1); transition: color .2s ease; }
@@ -560,8 +558,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
   <div class="wrap nav__inner">
     <!-- LOGO: brand_assets/ klasörüne logo dosyası gelince bu yazı yerine <img> konacak -->
     <a class="brand" href="#top" aria-label="Sevgi Can Pilates Stüdyosu, sayfa başı">
-      <span class="brand__name" translate="no">Sevgi <em>Can</em></span>
-      <span class="brand__sub">Pilates</span>
+      <span class="brand__name" translate="no">Sevgi Can Pilates</span>
     </a>
     <nav class="nav__links" aria-label="Ana menü">
       <a href="#pilates">Pilates</a>
@@ -578,8 +575,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
 <div class="menu" id="menu" data-open="false" role="dialog" aria-modal="true" aria-label="Menü">
   <div class="wrap menu__top">
     <span class="brand">
-      <span class="brand__name" translate="no">Sevgi <em>Can</em></span>
-      <span class="brand__sub">Pilates</span>
+      <span class="brand__name" translate="no">Sevgi Can Pilates</span>
     </span>
     <button class="nav__toggle" id="menuClose" type="button">Kapat</button>
   </div>
@@ -675,7 +671,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
       <h2 class="display h2 classes__head reveal">Verdiğimiz dersler.</h2>
       <div class="classes__grid">
         <article class="class class--feature reveal-r">
-          <img class="class__img" src="assets/img/reformer-tower.jpg" width="864" height="648" alt="Tower barı tutarak reformer üzerinde karın çalışması" loading="lazy" decoding="async">
+          <!-- Fotoğraf: Roxana Popovici, Unsplash Lisansı (unsplash.com/photos/lKe5jm-Sypw) -->
+          <img class="class__img" src="assets/img/reformer-pilates.jpg" width="1600" height="1200" alt="Reformer üzerinde yapılan bir yan plank hareketi" loading="lazy" decoding="async">
           <div class="class__body">
             <span class="class__tag">Grup veya birebir</span>
             <h3 class="class__title">Reformer pilates</h3>
@@ -803,8 +800,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
     <div class="foot__grid">
       <div>
         <span class="brand">
-          <span class="brand__name" translate="no">Sevgi <em>Can</em></span>
-          <span class="brand__sub">Pilates</span>
+          <span class="brand__name" translate="no">Sevgi Can Pilates</span>
         </span>
       </div>
       <div>
