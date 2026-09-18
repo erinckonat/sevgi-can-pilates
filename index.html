@@ -705,14 +705,14 @@ details[open] .sign::after{ transform: scaleY(0); }
 details p{ padding: 0 0 var(--s3); color: var(--ink-60); max-width: 60ch; font-size: 16px; }
 
 /* ============================================================
-   RANDEVU FORMU
+   RANDEVU / İLETİŞİM
    ============================================================ */
 
 .booking{ background: var(--sand); }
 .booking__copy{ grid-column: 1 / span 4; }
-.booking__form{ grid-column: 6 / span 7; }
+.booking__contact{ grid-column: 6 / span 7; }
 @media (max-width: 899px){
-  .booking__copy, .booking__form{ grid-column: auto; }
+  .booking__copy, .booking__contact{ grid-column: auto; }
 }
 .booking__title{ font-size: clamp(2rem, 4.2vw, 3rem); margin-bottom: var(--s3); }
 .booking__alt{ margin-top: var(--s5); display: grid; gap: var(--s2); }
@@ -731,116 +731,40 @@ details p{ padding: 0 0 var(--s3); color: var(--ink-60); max-width: 60ch; font-s
 .booking__alt a:hover{ border-color: var(--ink); }
 .booking__alt .ico{ color: var(--sage-d); }
 
-.form{
+.contact{
   background: #FCFAF6;
   border: 1px solid var(--line-soft);
   border-radius: 8px;
   padding: var(--s4);
 }
-@media (min-width: 900px){ .form{ padding: var(--s5); } }
+@media (min-width: 900px){ .contact{ padding: var(--s5); } }
 
-.field{ margin-bottom: var(--s3); }
-.field label{
-  display: block;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  color: var(--ink-60);
-  margin-bottom: var(--s1);
-}
-.field .opt{ color: var(--ink-40); font-weight: 400; letter-spacing: .04em; text-transform: none; }
-
-.field input,
-.field select,
-.field textarea{
-  width: 100%;
-  font-family: var(--sans);
+.contact__lead{
   font-size: 16px;
+  color: var(--ink-60);
+  margin-bottom: var(--s4);
+  max-width: 44ch;
+}
+.contact__wa{ width: 100%; font-size: 16px; padding: var(--s3); }
+.contact__num{
+  display: block;
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 3.4vw, 2.1rem);
+  letter-spacing: -.02em;
   color: var(--ink);
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid var(--line);
-  border-radius: 0;
-  padding: var(--s1) 0;
+  text-decoration: none;
+  margin-top: var(--s4);
+  font-variation-settings: 'opsz' 60;
+  border-bottom: 1px solid transparent;
+  width: fit-content;
   transition: border-color .2s var(--ease);
 }
-.field textarea{ resize: vertical; min-height: 72px; line-height: 1.6; }
-.field ::placeholder{ color: var(--ink-40); opacity: 1; }
-.field select{
-  appearance: none;
-  background-color: #FCFAF6;
-  color: var(--ink);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none' stroke='%235C554D' stroke-width='1.5'%3E%3Cpath d='M4 6.5L8 10.5L12 6.5'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 2px center;
-  padding-right: var(--s3);
-  cursor: pointer;
-}
-.field input:hover, .field select:hover, .field textarea:hover{ border-bottom-color: var(--ink-40); }
-.field input:focus, .field select:focus, .field textarea:focus{
-  outline: none;
-  border-bottom-color: var(--sage-d);
-  box-shadow: inset 0 -2px 0 var(--sage-d);
-}
-.field input:focus-visible, .field select:focus-visible, .field textarea:focus-visible{
-  outline: 2px solid var(--sage-d);
-  outline-offset: 4px;
-}
-
-.field [aria-invalid="true"]{
-  border-bottom-color: var(--ink);
-  box-shadow: inset 0 -2px 0 var(--ink);
-}
-.err{
-  display: block;
-  font-size: 13px;
-  color: var(--ink);
-  font-weight: 500;
-  margin-top: var(--s1);
-  min-height: 0;
-}
-.err:empty{ margin-top: 0; }
-
-.form__row{ display: grid; gap: var(--s3); }
-@media (min-width: 640px){ .form__row{ grid-template-columns: 1fr 1fr; } }
-
-.consent{
-  display: flex;
-  align-items: flex-start;
-  gap: var(--s2);
-  margin: var(--s4) 0 var(--s3);
+.contact__num:hover{ border-bottom-color: var(--ink); }
+.contact__hint{
   font-size: 14px;
-  line-height: 1.6;
-  color: var(--ink-60);
-  cursor: pointer;
+  color: var(--ink-40);
+  margin-top: var(--s1);
 }
-.consent input{
-  flex: none;
-  width: 20px;
-  height: 20px;
-  margin: 2px 0 0;
-  accent-color: var(--sage-d);
-  cursor: pointer;
-}
-.consent a{ color: var(--ink); border-bottom: 1px solid var(--line); text-decoration: none; }
-.consent a:hover{ border-color: var(--ink); }
-.consent[data-invalid="true"]{ color: var(--ink); }
-
-.form__submit{ width: 100%; margin-top: var(--s2); }
-.form__note{ font-size: 13px; color: var(--ink-40); margin-top: var(--s2); text-align: center; }
-
-.form__done{
-  display: none;
-  margin-top: var(--s3);
-  padding: var(--s3);
-  background: var(--sage-pale);
-  border-radius: var(--radius);
-  font-size: 15px;
-  color: var(--ink-80);
-}
-.form__done[data-shown="true"]{ display: block; }
-.form__done a{ color: var(--ink); font-weight: 600; }
 
 /* ============================================================
    FOOTER
@@ -1159,8 +1083,8 @@ details p{ padding: 0 0 var(--s3); color: var(--ink-60); max-width: 60ch; font-s
         <span class="step__num" aria-hidden="true">01</span>
         <h3>Mesaj gönderin</h3>
         <p>
-          Aşağıdaki formu doldurun ya da WhatsApp’tan yazın. Düşündüğünüz dersi ve
-          uygun olduğunuz günleri belirtmeniz yeterli.
+          WhatsApp’tan yazın ya da telefonla arayın. Düşündüğünüz dersi ve uygun
+          olduğunuz günleri belirtmeniz yeterli.
         </p>
       </div>
 
@@ -1251,9 +1175,9 @@ details p{ padding: 0 0 var(--s3); color: var(--ink-60); max-width: 60ch; font-s
         <details>
           <summary>Derse nasıl kayıt oluyorum?<span class="sign" aria-hidden="true"></span></summary>
           <p>
-            Sayfanın altındaki formu doldurabilir ya da WhatsApp’tan yazabilirsiniz.
-            Size dönüp uygun saati belirliyoruz. Katılım rezervasyonla olduğu için
-            gelmeden önce bilgi vermeniz gerekir.
+            WhatsApp’tan yazabilir ya da telefonla arayabilirsiniz. Size dönüp uygun
+            saati belirliyoruz. Katılım rezervasyonla olduğu için gelmeden önce bilgi
+            vermeniz gerekir.
           </p>
         </details>
 
@@ -1294,7 +1218,7 @@ details p{ padding: 0 0 var(--s3); color: var(--ink-60); max-width: 60ch; font-s
           <summary>Ders ücretleri ne kadar?<span class="sign" aria-hidden="true"></span></summary>
           <p>
             Ücret, ders türüne ve paket sayısına göre değişir. Güncel fiyat listesini
-            formu doldurduğunuzda ya da WhatsApp’tan yazdığınızda iletiyoruz.
+            WhatsApp’tan yazdığınızda ya da telefonda iletiyoruz.
           </p>
         </details>
       </div>
@@ -1308,86 +1232,38 @@ details p{ padding: 0 0 var(--s3); color: var(--ink-60); max-width: 60ch; font-s
         <p class="eyebrow">Randevu</p>
         <h2 class="booking__title">Randevu ve bilgi.</h2>
         <p class="lede">
-          Formu doldurduğunuzda mesajınız WhatsApp’ta hazır olarak açılır, göndermeniz
-          yeterli. Uygun saatler ve güncel fiyat bilgisi tarafımızdan iletilir.
+          Ders saatleri, uygunluk ve güncel fiyatlar için WhatsApp’tan yazabilir ya da
+          telefonla ulaşabilirsiniz.
         </p>
 
         <div class="booking__alt">
-          <a href="https://wa.me/905327877156" target="_blank" rel="noopener">
-            <svg class="ico" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3.5 16.5 4.6 13a6.8 6.8 0 1 1 2.6 2.5l-3.7 1Z"/></svg>
-            Doğrudan WhatsApp’tan yazın
-          </a>
-          <a href="tel:+905327877156">
-            <svg class="ico" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4.5 4.5h3l1.25 3-1.6 1.2a9 9 0 0 0 4.15 4.15l1.2-1.6 3 1.25v3a1 1 0 0 1-1.1 1A12.5 12.5 0 0 1 3.5 5.6a1 1 0 0 1 1-1.1Z"/></svg>
-            0532 787 71 56
-          </a>
           <a href="https://www.instagram.com/sevgicanpilatesstudio/" target="_blank" rel="noopener">
             <svg class="ico" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3.5" y="3.5" width="13" height="13" rx="4"/><circle cx="10" cy="10" r="3.1"/><circle cx="13.9" cy="6.1" r=".9" fill="currentColor" stroke="none"/></svg>
-            @sevgicanpilatesstudio
+            Instagram’dan da yazabilirsiniz
           </a>
         </div>
       </div>
 
-      <div class="booking__form reveal" style="--index:1">
-        <form class="form" id="bookingForm" novalidate>
-          <div class="form__row">
-            <div class="field">
-              <label for="ad">Ad Soyad</label>
-              <input type="text" id="ad" name="ad" autocomplete="name" aria-describedby="err-ad">
-              <span class="err" id="err-ad" aria-live="polite"></span>
-            </div>
-            <div class="field">
-              <label for="tel">Telefon</label>
-              <input type="tel" id="tel" name="tel" inputmode="tel" autocomplete="tel" placeholder="Örn. 0532 000 00 00…" aria-describedby="err-tel">
-              <span class="err" id="err-tel" aria-live="polite"></span>
-            </div>
-          </div>
+      <div class="booking__contact reveal" style="--index:1">
+        <div class="contact">
+          <p class="contact__lead">
+            Mesajınızda ilgilendiğiniz dersi ve uygun olduğunuz günleri belirtmeniz yeterli.
+            Size dönüp uygun saati ve güncel fiyat bilgisini paylaşıyoruz.
+          </p>
 
-          <div class="field">
-            <label for="ders">Hangi ders?</label>
-            <select id="ders" name="ders" autocomplete="off" aria-describedby="err-ders">
-              <option value="">Seçin</option>
-              <option>Reformer pilates — grup</option>
-              <option>Reformer pilates — birebir</option>
-              <option>Mat pilates</option>
-              <option>Henüz emin değilim</option>
-            </select>
-            <span class="err" id="err-ders" aria-live="polite"></span>
-          </div>
+          <a class="btn btn--sage contact__wa"
+             href="https://wa.me/905327877156?text=Merhaba%2C%20Sevgi%20Can%20Pilates%20St%C3%BCdyosu%27ndan%20bilgi%20almak%20istiyorum."
+             target="_blank" rel="noopener">
+            <svg class="ico" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3.5 16.5 4.6 13a6.8 6.8 0 1 1 2.6 2.5l-3.7 1Z"/></svg>
+            WhatsApp’tan yazın
+          </a>
 
-          <div class="field">
-            <label for="tercih">Hangi gün ve saatler size uygun?</label>
-            <input type="text" id="tercih" name="tercih" autocomplete="off" placeholder="Örn. hafta içi akşam 19:00 sonrası…" aria-describedby="err-tercih">
-            <span class="err" id="err-tercih" aria-live="polite"></span>
-          </div>
+          <a class="contact__num" href="tel:+905327877156">0532&nbsp;787&nbsp;71&nbsp;56</a>
+          <p class="contact__hint">Telefonla da ulaşabilirsiniz.</p>
 
-          <div class="field">
-            <label for="not">Eklemek istediğiniz bir not <span class="opt">(isteğe bağlı)</span></label>
-            <textarea id="not" name="not" rows="3" autocomplete="off" placeholder="Örn. daha önce pilates deneyiminiz, sormak istedikleriniz…"></textarea>
-          </div>
-
-          <label class="consent" for="onay" id="consentRow">
-            <input type="checkbox" id="onay" name="onay" autocomplete="off" aria-describedby="err-onay">
-            <span><a href="gizlilik.html" target="_blank" rel="noopener">Gizlilik ve KVKK aydınlatma metnini</a>
-            okudum; iletişim bilgilerimin randevu talebim için kullanılmasını kabul ediyorum.</span>
-          </label>
-          <span class="err" id="err-onay" aria-live="polite" style="margin-top:0"></span>
-
-          <button class="btn btn--sage form__submit" type="submit">
-            <svg class="ico" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3.5 16.5 4.6 13a6.8 6.8 0 1 1 2.6 2.5l-3.7 1Z"/></svg>
-            WhatsApp’tan gönder
-          </button>
-          <p class="form__note">Bilgileriniz kaydedilmez; yalnızca mesaj metnine dönüştürülür.</p>
-
-          <div class="form__done" id="formDone" data-shown="false" role="status">
-            WhatsApp yeni sekmede açıldı. Açılmadıysa
-            <a href="https://wa.me/905327877156" target="_blank" rel="noopener">wa.me/905327877156</a>
-            adresinden ya da <a href="tel:+905327877156">0532&nbsp;787&nbsp;71&nbsp;56</a> numarasından bize
-            doğrudan ulaşabilirsiniz.
-          </div>
-        </form>
+        </div>
       </div>
-    </div>
+
   </section>
 </main>
 
@@ -1564,67 +1440,6 @@ details p{ padding: 0 0 var(--s3); color: var(--ink-60); max-width: 60ch; font-s
     }, { threshold: 0.05 }).observe(booking);
   }
 
-  /* — Randevu formu → WhatsApp — */
-  var form = document.getElementById('bookingForm');
-  var done = document.getElementById('formDone');
-
-  var rules = [
-    { id: 'ad',      msg: 'Lütfen adınızı yazın.',                     test: function (v) { return v.length >= 2; } },
-    { id: 'tel',     msg: 'Size ulaşabilmemiz için telefon gerekli.',  test: function (v) { return v.replace(/\D/g, '').length >= 10; } },
-    { id: 'ders',    msg: 'Bir ders türü seçin.',                      test: function (v) { return v !== ''; } },
-    { id: 'tercih',  msg: 'Uygun olduğunuz gün ya da saatleri yazın.', test: function (v) { return v.length >= 3; } },
-    { id: 'onay',    msg: 'Devam etmek için onay kutusunu işaretleyin.',
-      test: function (v, el) { return el.checked; } }
-  ];
-
-  function clearError(el) {
-    el.removeAttribute('aria-invalid');
-    document.getElementById('err-' + el.id).textContent = '';
-    if (el.id === 'onay') { document.getElementById('consentRow').removeAttribute('data-invalid'); }
-  }
-
-  rules.forEach(function (rule) {
-    var el = document.getElementById(rule.id);
-    el.addEventListener('input', function () { clearError(el); });
-    el.addEventListener('change', function () { clearError(el); });
-  });
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    var firstBad = null;
-    rules.forEach(function (rule) {
-      var el = document.getElementById(rule.id);
-      var errEl = document.getElementById('err-' + rule.id);
-      if (rule.test(el.value.trim(), el)) {
-        clearError(el);
-      } else {
-        el.setAttribute('aria-invalid', 'true');
-        errEl.textContent = rule.msg;
-        if (el.id === 'onay') { document.getElementById('consentRow').setAttribute('data-invalid', 'true'); }
-        if (!firstBad) { firstBad = el; }
-      }
-    });
-
-    if (firstBad) { firstBad.focus(); return; }
-
-    var ad = document.getElementById('ad').value.trim();
-    var tel = document.getElementById('tel').value.trim();
-    var ders = document.getElementById('ders').value.trim();
-    var tercih = document.getElementById('tercih').value.trim();
-    var not = document.getElementById('not').value.trim();
-
-    var msg =
-      'Merhaba, Sevgi Can Pilates Stüdyosu\'ndan bilgi almak istiyorum.\n\n' +
-      'Ad Soyad: ' + ad + '\n' +
-      'Telefon: ' + tel + '\n' +
-      'Ders: ' + ders + '\n' +
-      'Uygun zaman: ' + tercih +
-      (not ? '\nNot: ' + not : '');
-
-    window.open('https://wa.me/' + WA + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
-    done.setAttribute('data-shown', 'true');
-  });
 })();
 </script>
 
